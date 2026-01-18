@@ -12,25 +12,33 @@
             gap: 1rem;
         }
 
-        .padding-1 {
-            padding: 1rem;
-        }
 
-        .space-between {
-            justify-content: space-between;
+        .horizontal-bok {
+            display: flex;
+            gap: 1rem;
         }
-
-        .vertical-box {
+        .vertical-bok {
             display: flex;
             gap: 1rem;
             flex-direction: column;
         }
 
-        #bobon {
-            width: 12rem;
-            height: 12rem;
-        }
 
+        .padding-1 {
+            padding: 1rem;
+        }
+        .space-between {
+            justify-content: space-between;
+        }
+        .vertical-box {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+        #bobo {
+            width: 12rem;
+            height: 9rem;
+        }
         #logo {
             width: 100px;
             height: 70px;
@@ -44,13 +52,47 @@
         h6 {
             margin: 0;
         }
+
+        .menu-desktop {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .menu-mobile {
+            display: none;
+            gap: 1rem;
+        }
+
+
+
+        /* if (screen size <= 768) use mobile */
+        @media (max-width: 768px) {
+
+            .menu-desktop {
+                display: none;
+            }
+
+            .menu-mobile {
+                display: flex;
+            }
+
+            .horizontal-bok {
+                display: none;
+            }
+
+            .vertical-bok {
+                display: flex;
+            }
+
+
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div class="horizontal-box padding-1 space-between">
+    <div class="menu-desktop padding-1 space-between">
 
         <div class="horizontal-box">
             <img id="logo" src="images/bob.jpeg" alt="logo is not chargin">
@@ -63,6 +105,10 @@
             <a href="">register</a>
             <a href="">Login</a>
         </div>
+    </div>
+
+    <div id="bobo" class="menu-mobile">
+        <img src="https://css-tricks.com/wp-content/uploads/2012/10/threelines.png">
     </div>
 
     <div class="horizontal-box padding-1 space-between">
@@ -149,8 +195,8 @@
     </div>
 
     <hr>
-            
-    <div class="horizontal-box padding-1 space-between">
+
+    <div class="horizontal-bok padding-1 space-between">
 
         <div class="vertical-box padding-1 space-between">
             <h2>Bob hoto moto</h2>
@@ -173,6 +219,26 @@
         </div>
 
     </div>
+
+    <div class="vertical-bok">
+
+        <h2>Bob hoto moto</h2>
+        <p>temohoto mo kohi ha hoto mimumi</p>
+        <p>imumim otoh ah ihok om otohomet</p>
+        <p>Bobonul bob papa boburi.</p>
+
+        <p> </p>
+
+        <a href="">Home</a>
+        <a href="">Games</a>
+        <a href="">About</a>
+        <a href="">Team</a>
+        <p> </p>
+        <a href="">Register</a>
+        <a href="">Login</a>
+
+    </div>
+
 
     <hr>
 
