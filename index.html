@@ -12,33 +12,30 @@
             gap: 1rem;
         }
 
-
         .horizontal-bok {
             display: flex;
             gap: 1rem;
         }
-        .vertical-bok {
-            display: flex;
-            gap: 1rem;
-            flex-direction: column;
-        }
-
 
         .padding-1 {
             padding: 1rem;
         }
+
         .space-between {
             justify-content: space-between;
         }
+
         .vertical-box {
             display: flex;
             gap: 1rem;
             flex-direction: column;
         }
+
         #bobo {
             width: 12rem;
-            height: 9rem;
+            height: 12rem;
         }
+
         #logo {
             width: 100px;
             height: 70px;
@@ -64,9 +61,18 @@
         }
 
 
+        .footer {
+            display: flex;
+            gap: 1rem;
+        }
+
 
         /* if (screen size <= 768) use mobile */
         @media (max-width: 768px) {
+
+            .footer {
+                flex-direction: column;
+            }
 
             .menu-desktop {
                 display: none;
@@ -77,13 +83,12 @@
             }
 
             .horizontal-bok {
-                display: none;
-            }
-
-            .vertical-bok {
                 display: flex;
             }
 
+            .horizontal-box {
+                display: none;
+            }
 
         }
     </style>
@@ -126,6 +131,81 @@
 
     <hr>
 
+    <div class="horizontal-bok pading-1">
+        <div class="vertical-box">
+            <h1>Bobin ruokahalu</h1>
+            <p>Olipa kerran Bob.
+                Bob ei ollut erityisen pitkä eikä erityisen kuuluisa, mutta hänellä oli yksi poikkeuksellinen taito: Bob
+                söi
+                todella paljon. ahneesti ja rumasti, mutta ei uteliaasti.
+                Eräänä aamuna Bob heräsi siihen, että hänen vatsansa murisi kuin kaukainen ukkonen. Hän nousi sängystä
+                ja
+                päätti, että tästä päivästä tulisi erilainen. Hän paistoi pannulla munia—mutta pannu täyttyi, ja sitten
+                toinenkin. Leipää katosi, juustoa suli, ja puurokulhoja ilmestyi pöydälle kuin taikaiskusta. Kun Bob
+                lopulta
+                huokaisi tyytyväisenä, aurinko oli ehtinyt nousta kunnolla.
+                Kaupungilla alkoi tapahtua kummia. Leipomo myi ennätysmäärän pullia. Torilla omenat katosivat koreista.
+                Kalakauppias hymyili leveästi ja sanoi: “Joku täällä syö tänään hyvin.” Kukaan ei vielä tiennyt, että se
+                joku oli Bob.
+                Bob jatkoi matkaansa. Hän maistoi keittoa, joka muistutti lapsuudesta, ja piirakkaa, joka maistui
+                tulevaisuudelta. Jokaisen ruoan jälkeen Bob pysähtyi hetkeksi—ei syödäkseen lisää, vaan kuunnellakseen,
+                miltä maailma tuntui. Ja maailma tuntui pehmeämmältä.
+                Illalla Bob saapui puistoon, jossa ihmiset olivat kerääntyneet pitkän pöydän ääreen. Joku oli tuonut
+                kattilan, toinen leivän, kolmas tarinan. Bob istui alas. Hän söi, ja muut söivät. Nauru kiersi pöytää,
+                ja
+                lautaset täyttyivät uudelleen. Jossain vaiheessa joku huomasi, ettei Bob ollut syönyt eniten—vaan
+                kutsunut
+                syömään.
+                Kun yö laskeutui, Bob käveli kotiin vatsansa täynnä ja sydämensä vielä täydempänä. Hän hymyili. Hän
+                tiesi,
+                että huomenna hän söisi taas paljon. Mutta ennen kaikkea hän tiesi tämän: kun Bob söi, maailma hän söi
+                itsensä kanssaan.</p>
+
+            <h2>BOB</h2>
+            <img id="bobo" src="images/pusicu-gras.jpeg">
+
+        </div>
+
+    </div>
+
+    <div class="horizontal-bok pading-1">
+        <div class="vertical-box">
+            <h1>Bobin ruokahalu</h1>
+            <p>Olipa kerran Bob.
+                Bob ei ollut erityisen pitkä eikä erityisen kuuluisa, mutta hänellä oli yksi poikkeuksellinen taito: Bob
+                söi
+                todella paljon. ahneesti ja rumasti, mutta ei uteliaasti.
+                Eräänä aamuna Bob heräsi siihen, että hänen vatsansa murisi kuin kaukainen ukkonen. Hän nousi sängystä
+                ja
+                päätti, että tästä päivästä tulisi erilainen. Hän paistoi pannulla munia—mutta pannu täyttyi, ja sitten
+                toinenkin. Leipää katosi, juustoa suli, ja puurokulhoja ilmestyi pöydälle kuin taikaiskusta. Kun Bob
+                lopulta
+                huokaisi tyytyväisenä, aurinko oli ehtinyt nousta kunnolla.
+                Kaupungilla alkoi tapahtua kummia. Leipomo myi ennätysmäärän pullia. Torilla omenat katosivat koreista.
+                Kalakauppias hymyili leveästi ja sanoi: “Joku täällä syö tänään hyvin.” Kukaan ei vielä tiennyt, että se
+                joku oli Bob.
+                Bob jatkoi matkaansa. Hän maistoi keittoa, joka muistutti lapsuudesta, ja piirakkaa, joka maistui
+                tulevaisuudelta. Jokaisen ruoan jälkeen Bob pysähtyi hetkeksi—ei syödäkseen lisää, vaan kuunnellakseen,
+                miltä maailma tuntui. Ja maailma tuntui pehmeämmältä.
+                Illalla Bob saapui puistoon, jossa ihmiset olivat kerääntyneet pitkän pöydän ääreen. Joku oli tuonut
+                kattilan, toinen leivän, kolmas tarinan. Bob istui alas. Hän söi, ja muut söivät. Nauru kiersi pöytää,
+                ja
+                lautaset täyttyivät uudelleen. Jossain vaiheessa joku huomasi, ettei Bob ollut syönyt eniten—vaan
+                kutsunut
+                syömään.
+                Kun yö laskeutui, Bob käveli kotiin vatsansa täynnä ja sydämensä vielä täydempänä. Hän hymyili. Hän
+                tiesi,
+                että huomenna hän söisi taas paljon. Mutta ennen kaikkea hän tiesi tämän: kun Bob söi, maailma hän söi
+                itsensä kanssaan.</p>
+
+            <h2>BOB</h2>
+            <img id="bobo" src="images/pusicu-gras.jpeg">
+
+        </div>
+
+    </div>
+
+
     <div class="horizontal-box pading-1">
         <div class="vertical-box">
             <h1>Bobin ruokahalu</h1>
@@ -160,15 +240,17 @@
 
         <div>
             <h2>BOB</h2>
-            <img id="bobon" src="images/pusicu-gras.jpeg">
+            <img id="bobo" src="images/pusicu-gras.jpeg">
         </div>
 
     </div>
+
+
     <div class="horizontal-box pading-1">
 
         <div>
             <h2>BOB</h2>
-            <img id="bobon" src="images/pusicu-gras.jpeg">
+            <img id="bobo" src="images/pusicu-gras.jpeg">
         </div>
 
         <p>Olipa kerran Bob.
@@ -196,7 +278,7 @@
 
     <hr>
 
-    <div class="horizontal-bok padding-1 space-between">
+    <div class="footer padding-1 space-between">
 
         <div class="vertical-box padding-1 space-between">
             <h2>Bob hoto moto</h2>
@@ -220,24 +302,6 @@
 
     </div>
 
-    <div class="vertical-bok">
-
-        <h2>Bob hoto moto</h2>
-        <p>temohoto mo kohi ha hoto mimumi</p>
-        <p>imumim otoh ah ihok om otohomet</p>
-        <p>Bobonul bob papa boburi.</p>
-
-        <p> </p>
-
-        <a href="">Home</a>
-        <a href="">Games</a>
-        <a href="">About</a>
-        <a href="">Team</a>
-        <p> </p>
-        <a href="">Register</a>
-        <a href="">Login</a>
-
-    </div>
 
 
     <hr>

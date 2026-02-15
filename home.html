@@ -75,6 +75,30 @@
         div {
             background-color: rgb(55, 251, 94);
         }
+
+        .footer {
+            display: flex;
+            gap: 1rem;
+        }
+
+
+        /* if (screen size <= 768) use mobile */
+        @media (max-width: 768px) {
+
+            .footer {
+                flex-direction: column;
+            }
+
+            .menu-desktop {
+                display: none;
+            }
+
+            .menu-mobile {
+                display: flex;
+            }
+
+        }
+
     </style>
 
 </head>
@@ -241,7 +265,7 @@
 
     <hr>
             
-    <div class="horizontal-box padding-1 space-between">
+    <div class="footer padding-1 space-between">
 
         <div class="vertical-box padding-1 space-between">
             <h2>Bob hoto moto</h2>
