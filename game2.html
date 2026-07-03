@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+
+    <script>
+        console.log("page loading...")
+
+        let count = 0;
+
+        function number1() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+            
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let messagelabel = document.getElementById("message")
+            
+            if ( option == 1 ) {
+                messagelabel.innerHTML = "voitin"
+            }
+            
+            if ( option == 2 ) {
+                messagelabel.innerHTML = "tasapeli"
+            }
+            
+            if ( option == 3 ) {
+                messagelabel.innerHTML = "hävisit"
+            } 
+            
+        }
+        
+        function number2() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+            
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let messagelabel = document.getElementById("message")
+            
+            if ( option == 1 ) {
+                messagelabel.innerHTML = "voitit"
+            }
+            
+            if ( option == 2 ) {
+                messagelabel.innerHTML = "tasapeli"
+            }
+            
+            if ( option == 3 ) {
+                messagelabel.innerHTML = "hävisit"
+            }
+            
+        }
+        
+        function number3() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+            
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let messagelabel = document.getElementById("message")
+            
+            if ( option == 1 ) {
+                messagelabel.innerHTML = "voitit"
+            }
+            
+            if ( option == 2 ) {
+                messagelabel.innerHTML = "tasapeli"
+            }
+            
+            if ( option == 3 ) {
+                messagelabel.innerHTML = "hävisit"
+            }
+            
+        }
+        
+        let messagelabel
+        
+        </script>
+
+</head>
+<body>
+    <div class="v-box center h-full">
+        <div class="h-box center gap">
+            
+            <button onclick="number1();">_____1_____</button>
+            <button onclick="number2();">_____2_____</button>
+            <button onclick="number3();">_____3_____</button>
+            
+        </div>
+        <label id="message">...</label>
+    </div>
+</body>
+</html>

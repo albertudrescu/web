@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .horizontal-box {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .padding-1 {
+            padding: 1rem;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        #logo {
+            width: 100px;
+            height: 70px;
+        }
+
+        .vertical-box {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+
+        #bobon-5 {
+            width: 50rem;
+            height: 50rem;
+        }
+
+        .bobok {
+            height: 40rem;
+        }
+        
+        .bobo {
+            flex-grow: 1;
+        }
+
+        .font-inherit {
+            font-family: inherit;
+        }
+
+        .font {
+            font-family: Luminari;
+        }
+
+        .hv-box {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+
+        .stretch {
+            display: flex;
+            align-items: stretch;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        .footer {
+            display: flex;
+            gap: 1rem;
+        }
+
+
+        /* if (screen size <= 768) use mobile */
+        @media (max-width: 768px) {
+
+            .footer {
+                flex-direction: column;
+            }
+
+            .menu-desktop {
+                display: none;
+            }
+
+            .menu-mobile {
+                display: flex;
+            }
+
+            #bobon-5 {
+                display: none;
+            }
+
+            .bobok {
+                display: flex;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="horizontal-box padding-1 space-between">
+    
+        <div class="horizontal-box">
+            <img id="logo" src="images/bob.jpeg" alt="logo is not chargin">
+            <a href="home.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="horizontal-box">
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+        </div>
+        </div>
+    
+    <div class="horizontal-box padding-1 space-between">
+
+        <div class="boboh-box">
+            <h4>Contacs</h4>
+        </div>
+
+        <input type="text" placeholder="Search">
+    </div>
+
+    <hr>
+    <div class="horizontal-box padding-1">
+        <div class="vertical-box">
+            <a href="team.html">Team</a>
+            <a href="location.html">Locations</a>
+            <a href="contact.html">Contacs</a>
+        </div>
+        
+        <div class="vertical-box stretch">
+            <div class="hv-box">
+                <div class="horizontal-box">
+                    <div class="vertical-box bobo">
+                        <label for="name">Name</label>
+                        <input class="font" type="text" id="name" name="name">
+                    </div>
+                    <div class="vertical-box bobo">
+                        <label for="email">Email</label>
+                        <input class="font" type="email" id="email" name="email">
+                    </div>
+    
+                </div>
+    
+            </div>
+            <label for="message">Message</label>
+            <input class="font-inherit" rows="5" type="text" id="message" name="message"></textarea>
+        </div>
+
+    </div>
+
+
+
+<hr>
+    <div class="footer padding-1 space-between">
+
+        <div class="vertical-box padding-1 space-between">
+            <h2>Bob hoto moto</h2>
+            <p>temohoto mo kohi ha hoto mimumi</p>
+            <p>imumim otoh ah ihok om otohomet</p>
+            <p>Bobonul bob papa boburi.</p>
+        </div>
+
+        <div class="vertical-box">
+
+            <a href="home.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="about.html">About</a>
+            <p></p>
+            <a href="register.html">register</a>
+            <a href="login.html">Login</a>
+        </div>
+
+        <div class="vertical-box">
+            <a href="location.html">Location</a>
+            <a href="contact.html">contact</a>
+        </div>
+
+    </div>
+<hr>
+</body>
+</html>

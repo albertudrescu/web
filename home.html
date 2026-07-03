@@ -7,7 +7,13 @@
     <title>Document</title>
 
     <style>
+
         .horizontal-box {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .horizontal-bok {
             display: flex;
             gap: 1rem;
         }
@@ -26,41 +32,14 @@
             flex-direction: column;
         }
 
+        img {
+            width: 12rem;
+            height: 12rem;
+        }
+
         #logo {
             width: 100px;
             height: 70px;
-        }
-
-        .bobon-box {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        #bobon {
-            width: 1400px;
-            height: 400px;
-        }
-
-        #hoton {
-            width: 200px;
-            height: 100px;
-        }
-
-        #hotom {
-            width: 292px;
-            height: 200px;
-        }
-
-        #hotok {
-            width: 300px;
-            height: 300px;
-        }
-
-        #bobo {
-            width: 500px;
-            height: 500px;
         }
 
         h1,
@@ -72,15 +51,35 @@
             margin: 0;
         }
 
-        div {
-            background-color: rgb(55, 251, 94);
+        .menu-desktop {
+            display: flex;
+            gap: 1rem;
         }
+
+        .menu-mobile {
+            display: none;
+            gap: 1rem;
+        }
+
 
         .footer {
             display: flex;
             gap: 1rem;
         }
 
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .section2>div {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            background-color: rgb(255, 255, 255);
+        }
 
         /* if (screen size <= 768) use mobile */
         @media (max-width: 768px) {
@@ -89,36 +88,33 @@
                 flex-direction: column;
             }
 
-            .menu-desktop {
-                display: none;
-            }
-
-            .menu-mobile {
+            .horizontal-bok {
                 display: flex;
             }
 
-        }
+            .horizontal-box {
+                display: none;
+            }
 
+        }
     </style>
 
 </head>
 
 <body>
 
-
-
-    <div class="horizontal-box padding-1 space-between">
+    <div class="menu-desktop padding-1 space-between">
 
         <div class="horizontal-box">
             <img id="logo" src="images/bob.jpeg" alt="logo is not chargin">
             <a href="home.html">Home</a>
-            <a href="">Games</a>
+            <a href="games.html">Games</a>
             <a href="about.html">About</a>
         </div>
 
         <div class="horizontal-box">
-            <a href="">register</a>
-            <a href="">Login</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
         </div>
     </div>
 
@@ -129,142 +125,44 @@
 
     <hr>
 
-    <div class="horizontal-box padding-1 space-between">
+    <h4>Bob motomo ko hotomo. hohiköky bybibö moto ko hoto po moto.</h4>
+    <h4>Hohi hohm hohu hahi huhu höhy huhi haha.</h4>
+    <hr>
+    <h4>Bob motomo ko hotom0. hohiköky bybibö moto ko hoto po moto.</h4>
+    <h4>Hohi hohn hohu hahi hohu höhy huhl haha.</h4>
 
-        <div class="vertical-box">
+    <hr>
 
-            <a href="team.html">team</a>
-            <a href="">lokations</a>
-            <a href="">contacs</a>
-
-        </div>
-
-        <div class="bobon-box">
-            <h1>Bobonul bob</h1>
-            <p>ghlikn. gjykuhj ftyguhij dtfyguhij dthfyjgukhj tfyjgkhj dtfygukhj thfyjgukh dtfjygkh fxcghjhgkjhk
-                hdfjghjhk
-                xvbfcgnvhmbj,n dfhgjhj, dtfygh rdgtfhygjuhk srgdthfjyg esrdtfygjukh rdthfyjgukh fsdghj sdfghj
-                sfdgfhtygjh
-                cbvnbmjn, fxghmj,n fcgvhmb fghjn fgnhmbjn fcgvhb fcgvb ghfbjn fgvbm dgfhbj dtfhgyjh dgtfhyguhj
-                sfdgrfthgyjhkj
-                fhgj dthfyjgkhjk dgthfygjh rgdthfyjukhj dgtfhg fcg dgfhyjhuj xfc dfghmb dfgthghj xdfghjn dfghb dgrfhtgjn
-                drfthgjn
-                fcgvnhbmjn dfghjn fgvhbm fghjn fcgvnhbmn rdtfhgjyhn frdtyuhkj drgtyjuhjn drtyjuhkjn trygj dtfhyjgukhjn
-                dtfyuhjnm vcfdrtghn
-                vbcgfhjnm vfghjn vgftyujkm vcfdrt67yuijn bvgtyuijkmnbvftyujmnbgtyujnm bghn cftyuhjn cfghn vghjnm
-                vfghujkm, vcftgyhbn
-                cghjnm cvgbn vghn vghjm vghjnm vghjn vgyhjn vfghjnm cfghbn vgfyhjn vfgyhjn vfgyhjn cfghbn cfdtghn
-                vcfdrtyuhjnm cxdrtyhbn
-                sertyujkm drtyujkm vcftyuhjm vcfghn cfghjmn vcfghjnm vfghjnm vftyhjn vcftyhjn vgfyujkm bvgyhujnm
-                cftyuijkm cfdrtyhnb
-                cfghjkm, vcgfhjn vcfghjnm vcfgtyuhjmn bvgfyhujn vfgtyujn bvgftyujn vcftgyhjnm vgftyuhjn vcftyhjn vfgyhjn
-                bvf
-                bvcftyujkmn bvgftyuikm vgyuhjkm vcfgyhjn bvgyuijkm bvgyuhjkm bvgfyhujkm vcgfyhjnm vgfhjnm bvghjnm
-                vcfghjnm
-                vcftyuhjn vcfghjnm vcfgyhjnm vghujnm bvghjnm vghjnm bvghjnm vbghjnm vghjnm vghjnm bvghjnm vghjm bvghjm
-                bvghjnm
-                cftyhujnm cfghjnm vghjnm vgfyhujkm, bvghjm vghjnm bvghjnm bvghjnm vcfgyuhjn vgftyhbn vcfgtghbn cfghbn
-                vcfghbn
-                cftyujkm cftyuhjnm vcfgtyuhjnm vcftryuhjnm cfdrt6yuhjnm vcdfrtyujhnm vcftyujnm vcfdrtyuhjn cxdsertyhjnb
-                cftyujmn vcftyujkm vcftyujkm vcfgtyuhjkm, cftgyhjnm vcftyuhjkm vcftyuhjnm vcftyujkm vfgyuikm, cfgyuhjnm
-                cfdtyuhjn
-                cfdtyuhjn cfghjnm vghjnm vgyhujnm vghjnm vghjkm bvgyuijkm vcgyhjn bvgtyuhjnm bvgftyujn vftyuhjnm
-                vfgtyhjn vgtyujkmn
-                cxdftghbn cfghn vcftyjn bvgfyujn vcfty ftyhujm ftyuhjnm vcftgyhujkm vcfghjkm, vcgfhjnm vcghjnm vghjkm,
-                vghjm vcfghjnm
-                cfgyjm cftyuhjn vcftyhn vfgtyuhjn vfgtyujn vcfgyjn vgftujn vcfrt67ujn bvgftyhjn cdryhjnb cftyujnm
-                cvftyujmn vfrtyuhjbn
-                cfghjm ftyuhjn cdrtyujn cfghn cvfghjn vcfgtyuijkmn vfgtyujnm cfghjn cftyujnm cftyujn vcfdrt6yuhb
-                cfgtyhjn cfyujn cvfgtyujn
-                cfgtygjhmbn cvgfgjhbn
-                cftyhjn vghn vghjnm vghjn cftghb cfghb vcfghjn vcghn cftyujkm vcfghjnm vghn cghjn cfghjnm cxdfghjn 
-                cvfghjkm vcxdfghjn cxdhjn cgh 
-            </p>
-
-            <img id="bobon" src="images/pusicu-gras.jpeg">
-
-            <h1>Logourile  importante</h1>
-            <div>
-                <img id="hoton" src="https://www.pngkey.com/png/full/116-1160072_poto-mba-poto-logo.png">
-                <img id="hotok"
-                    src="https://ih1.redbubble.net/image.5873697543.7150/st,small,507x507-pad,600x600,f8f8f8.jpg">
-                <img id="hoton"
-                    src="https://vectorseek.com/wp-content/uploads/2023/11/Motorola-Moto-Logo-Vector.svg-.png">
-                <img id="hotom" src="https://hototools.com/cdn/shop/files/HOTO_logo_06.png?v=1749721668&width=2048">
-
-            </div>
-
-            <div class="horizontal-box pading-1">
-                <h1>Bobin ruokahalu</h1>
-                <p>Olipa kerran Bob.
-                    Bob ei ollut erityisen pitkä eikä erityisen kuuluisa, mutta hänellä oli yksi poikkeuksellinen taito: Bob
-                    söi
-                    todella paljon. ahneesti ja rumasti, mutta ei uteliaasti.
-                    Eräänä aamuna Bob heräsi siihen, että hänen vatsansa murisi kuin kaukainen ukkonen. Hän nousi sängystä
-                    ja
-                    päätti, että tästä päivästä tulisi erilainen. Hän paistoi pannulla munia—mutta pannu täyttyi, ja sitten
-                    toinenkin. Leipää katosi, juustoa suli, ja puurokulhoja ilmestyi pöydälle kuin taikaiskusta. Kun Bob
-                    lopulta
-                    huokaisi tyytyväisenä, aurinko oli ehtinyt nousta kunnolla.
-                    Kaupungilla alkoi tapahtua kummia. Leipomo myi ennätysmäärän pullia. Torilla omenat katosivat koreista.
-                    Kalakauppias hymyili leveästi ja sanoi: “Joku täällä syö tänään hyvin.” Kukaan ei vielä tiennyt, että se
-                    joku oli Bob.
-                    Bob jatkoi matkaansa. Hän maistoi keittoa, joka muistutti lapsuudesta, ja piirakkaa, joka maistui
-                    tulevaisuudelta. Jokaisen ruoan jälkeen Bob pysähtyi hetkeksi—ei syödäkseen lisää, vaan kuunnellakseen,
-                    miltä maailma tuntui. Ja maailma tuntui pehmeämmältä.
-                    Illalla Bob saapui puistoon, jossa ihmiset olivat kerääntyneet pitkän pöydän ääreen. Joku oli tuonut
-                    kattilan, toinen leivän, kolmas tarinan. Bob istui alas. Hän söi, ja muut söivät. Nauru kiersi pöytää,
-                    ja
-                    lautaset täyttyivät uudelleen. Jossain vaiheessa joku huomasi, ettei Bob ollut syönyt eniten—vaan
-                    kutsunut
-                    syömään.
-                    Kun yö laskeutui, Bob käveli kotiin vatsansa täynnä ja sydämensä vielä täydempänä. Hän hymyili. Hän
-                    tiesi,
-                    että huomenna hän söisi taas paljon. Mutta ennen kaikkea hän tiesi tämän: kun Bob söi, maailma hän söi
-                    itsensä kanssaan.</p>
-    
-            
-    
-                <div>
-                    <h2>BOB</h2>
-                    <img id="bobo" src="images/pusicu-gras.jpeg">
-                </div>
-            </div>
-        <div class="horizontal-box pading-1">
-    
-            <div>
-                <h2>BOB</h2>
-                <img id="bobo" src="images/pusicu-gras.jpeg">
-            </div>
-    
-            <p>Olipa kerran Bob.
-                Bob ei ollut erityisen pitkä eikä erityisen kuuluisa, mutta hänellä oli yksi poikkeuksellinen taito: Bob söi
-                todella paljon. ahneesti ja rumasti, mutta ei uteliaasti.
-                Eräänä aamuna Bob heräsi siihen, että hänen vatsansa murisi kuin kaukainen ukkonen. Hän nousi sängystä ja
-                päätti, että tästä päivästä tulisi erilainen. Hän paistoi pannulla munia—mutta pannu täyttyi, ja sitten
-                toinenkin. Leipää katosi, juustoa suli, ja puurokulhoja ilmestyi pöydälle kuin taikaiskusta. Kun Bob lopulta
-                huokaisi tyytyväisenä, aurinko oli ehtinyt nousta kunnolla.
-                Kaupungilla alkoi tapahtua kummia. Leipomo myi ennätysmäärän pullia. Torilla omenat katosivat koreista.
-                Kalakauppias hymyili leveästi ja sanoi: “Joku täällä syö tänään hyvin.” Kukaan ei vielä tiennyt, että se
-                joku oli Bob.
+    <div class="section2">
+        <h1>kissa nimeltä bob</h1>
+        <div>
+            <img src="images/pusicu-gras.jpeg">
+            <p>
                 Bob jatkoi matkaansa. Hän maistoi keittoa, joka muistutti lapsuudesta, ja piirakkaa, joka maistui
                 tulevaisuudelta. Jokaisen ruoan jälkeen Bob pysähtyi hetkeksi—ei syödäkseen lisää, vaan kuunnellakseen,
                 miltä maailma tuntui. Ja maailma tuntui pehmeämmältä.
                 Illalla Bob saapui puistoon, jossa ihmiset olivat kerääntyneet pitkän pöydän ääreen. Joku oli tuonut
-                kattilan, toinen leivän, kolmas tarinan. Bob istui alas. Hän söi, ja muut söivät. Nauru kiersi pöytää, ja
-                lautaset täyttyivät uudelleen. Jossain vaiheessa joku huomasi, ettei Bob ollut syönyt eniten—vaan kutsunut
-                syömään.
-                Kun yö laskeutui, Bob käveli kotiin vatsansa täynnä ja sydämensä vielä täydempänä. Hän hymyili. Hän tiesi,
-                että huomenna hän söisi taas paljon. Mutta ennen kaikkea hän tiesi tämän: kun Bob söi, maailma hän söi
-                itsensä kanssaan.</p>
-    
+                kattilan, toinen leivän, kolmas tarinan. Bob istui alas. Hän söi, ja muut söivät. Nauru kiersi pöytää,
+            </p>
         </div>
-            
+    </div>
+
+    <div class="section2">
+        <h1>kissa nimeltä bob</h1>
+        <div>
+            <p>
+                Bob jatkoi matkaansa. Hän maistoi keittoa, joka muistutti lapsuudesta, ja piirakkaa, joka maistui
+                tulevaisuudelta. Jokaisen ruoan jälkeen Bob pysähtyi hetkeksi—ei syödäkseen lisää, vaan kuunnellakseen,
+                miltä maailma tuntui. Ja maailma tuntui pehmeämmältä.
+                Illalla Bob saapui puistoon, jossa ihmiset olivat kerääntyneet pitkän pöydän ääreen. Joku oli tuonut
+                kattilan, toinen leivän, kolmas tarinan. Bob istui alas. Hän söi, ja muut söivät. Nauru kiersi pöytää,
+            </p>
+            <img src="images/pusicu-gras.jpeg">
         </div>
     </div>
 
     <hr>
-            
+
     <div class="footer padding-1 space-between">
 
         <div class="vertical-box padding-1 space-between">
@@ -275,19 +173,18 @@
         </div>
 
         <div class="vertical-box">
-
             <a href="home.html">Home</a>
-            <a href="">Games</a>
+            <a href="games.html">Games</a>
             <a href="about.html">About</a>
-            <p></p>
-            <a href="">register</a>
-            <a href="">Login</a>
+            <a href="team.html">team</a>
+            <p> </p>
+            <a href="register.html">register</a>
+            <a href="login.html">Login</a>
         </div>
 
         <div class="vertical-box">
-            <a href="">hoto</a>
-            <a href="">moto</a>
-            <a href="">poto</a>
+            <a href="location.html">Location</a>
+            <a href="contact.html">contact</a>
         </div>
 
     </div>

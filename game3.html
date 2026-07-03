@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        console.log("page loading...")
+
+        let count = 0;
+
+        function bobo1() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let bobobolabel = document.getElementById("bobobo");
+
+            if (option == 1) {
+                bobobolabel.innerHTML = "voitit"
+            }
+
+            if (option == 2) {
+                bobobolabel.innerHTML = "tasapeli"  
+            }
+
+            if (option == 3) {
+                bobobolabel.innerHTML = "hävisit"
+            }
+
+        }
+
+        function bobo2() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let bobobolabel = document.getElementById("bobobo");
+
+            if (option == 1) {
+                bobobolabel.innerHTML = "voitit"
+            }
+
+            if (option == 2) {
+                bobobolabel.innerHTML = "tasapeli"  
+            }
+
+            if (option == 3) {
+                bobobolabel.innerHTML = "hävisit"
+            }
+
+        }
+        
+        function bobo3() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let bobobolabel = document.getElementById("bobobo");
+
+            if (option == 1) {
+                bobobolabel.innerHTML = "voitit"
+            }
+
+            if (option == 2) {
+                bobobolabel.innerHTML = "tasapeli"  
+            }
+
+            if (option == 3) {
+                bobobolabel.innerHTML = "hävisit"
+            }
+            
+        }
+
+        let bobobolabel
+
+    </script>
+
+</head>
+<body>
+    <div class="h-box center gap">
+        <button onclick="bobo1();">kivi</button>
+        <button onclick="bobo2();">paperi</button>
+        <button onclick="bobo3();">sakset</button>
+
+    </div>
+    <div class="h-box center">
+        <label id="bobobo">_____</label>
+
+    </div>
+    
+</body>
+</html>

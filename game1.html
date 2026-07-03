@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+
+    <script>
+        console.log("page loading...")
+
+        let count = 0;
+
+        function rockClick() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let messagelabel = document.getElementById("message")
+
+            if ( option == 1 ) {
+                messagelabel.innerHTML = "sinä kivi. tietokone kivi. Tasapeli"
+            } 
+            
+            if ( option == 2 ) {
+                messagelabel.innerHTML = "sinä kivi. tietokone sakset. Voitit"
+            }
+    
+            if( option == 3 ) {
+                messagelabel.innerHTML = "sinä kivi. tietokone paperi. Hävisit"
+            }
+            
+        }
+
+        function paperClick() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let messagelabel = document.getElementById("message")
+
+            if ( option == 1 ) {
+                messagelabel.innerHTML = "sinä paperi. tietokone paperi. Tasapeli"
+            } 
+            
+            if ( option == 2 ) {
+                messagelabel.innerHTML = "sinä paperi. tietokone kivi. Voitit"
+            }
+    
+            if( option == 3) {
+                messagelabel.innerHTML = "sinä paperi. tietokone sakset. Hävisit"
+            }
+        }
+
+        function scissorsClick() {
+            let randomNumber = Math.random();
+            let option = Math.floor(randomNumber * 3 + 1);
+
+            console.log("button cliced", count, "times");
+            console.log("Option", option);
+
+            let messagelabel = document.getElementById("message")
+
+            if ( option == 1 ) {
+                messagelabel.innerHTML = "sinä sakset. tietokone sakset. Tasapeli"
+            } 
+            
+            if ( option == 2 ) {
+                messagelabel.innerHTML = "sinä sakset. tietokone paperi. Voitit"
+            }
+    
+            if( option == 3 ) {
+                messagelabel.innerHTML = "sinä sakset. tietokone kivi. Hävisit"
+            }
+
+        }
+
+        let messagelabel
+
+    </script>
+
+</head>
+
+<body>
+    <div class="h-box center h-full">
+        <div class="v-box center gap">
+
+            <button onclick="rockClick();">kivi</button>
+            <button onclick="paperClick();">paperi</button>
+            <button onclick="scissorsClick();">sakset</button>
+            <label id="message">...</label>
+
+        </div>
+    </div>
+</body>
+
+</html>

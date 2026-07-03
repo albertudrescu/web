@@ -1,0 +1,26 @@
+.h-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.v-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.h-full {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+.gap {
+    gap: 1rem;
+}
